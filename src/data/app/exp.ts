@@ -6,7 +6,7 @@ export const timeline = [
   },
   {
     date: "jul 2016 - jan 2017",
-    title: "Elettronic technician 🔌",
+    title: "Electronic technician 🔌",
     text: "Orion srl - Prato, Tuscany, Italy",
   },
   {
