@@ -56,6 +56,14 @@ export default function Skills({}: Props) {
                 />
               </div>
               <div className=" mb-3">
+                <p className="mr-3 font-bold">TYPESCRIPT</p>{" "}
+                <Progess
+                  percentage="80%"
+                  width="w-4/5"
+                  className="self-center"
+                />
+              </div>
+              <div className=" mb-3">
                 <p className="mr-3 font-bold">REACT</p>{" "}
                 <Progess
                   percentage="80%"
@@ -74,6 +82,14 @@ export default function Skills({}: Props) {
             <Card.Body>
               <div className="mb-3">
                 <p className="mr-3 font-bold">NODEJS</p>{" "}
+                <Progess
+                  percentage="80%"
+                  width="w-4/5"
+                  className="self-center"
+                />
+              </div>
+              <div className="mb-3">
+                <p className="mr-3 font-bold">EXPRESSJS</p>{" "}
                 <Progess
                   percentage="80%"
                   width="w-4/5"
