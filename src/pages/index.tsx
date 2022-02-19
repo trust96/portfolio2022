@@ -1,8 +1,9 @@
 import About from "app/about/About";
 import Exp from "app/exp/Exp";
+import Footer from "app/footer/Footer";
 import Header from "app/header/Header";
 import Navigation from "app/navigation/Navigation";
-import Projects from "app/projects/Projects";
+import Skills from "app/skills/Skills";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       <Header />
       <Exp />
       <About />
-      <Projects />
+      <Skills />
+      <Footer />
     </>
   );
 }

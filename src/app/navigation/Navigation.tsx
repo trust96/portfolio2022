@@ -4,16 +4,21 @@ import Logo from "app/logo/Logo";
 import React, { ReactElement, useEffect, useRef, useState } from "react";
 import style from "./navigation.module.css";
 import Link from "next/link";
-import { listItems, footerItems } from "../../data/app/navigation";
+import { listItems } from "../../data/app/navigation";
 import {
   FaFacebookSquare,
+  FaGithub,
   FaInstagramSquare,
+  FaLinkedin,
   FaYoutubeSquare,
 } from "react-icons/fa";
+import { useRouter } from "next/router";
 export default function Navigation(): ReactElement {
   const [isOpen, setIsOpen] = useState(false);
   const [width, setWidth] = useState(0);
   const [left, setLeft] = useState(0);
+  const router = useRouter();
+
   const ul = useRef<HTMLUListElement>(null);
   useEffect(() => {
     setWidth(ul.current.children[0].clientWidth);
@@ -32,6 +37,7 @@ export default function Navigation(): ReactElement {
                     onClick={(e) => {
                       setWidth(e.currentTarget.offsetWidth);
                       setLeft(e.currentTarget.offsetLeft);
+                      setIsOpen(false);
                     }}
                     className={`${style.item}`}
                     key={name}
@@ -47,41 +53,33 @@ export default function Navigation(): ReactElement {
                 ></div>
               </ul>
               <div className={`${style.button}`}>
-                <Button tag="button" className="">
+                <Button
+                  tag="button"
+                  className=""
+                  onClick={() => {
+                    router.push("/CV.pdf");
+                  }}
+                >
                   download cv
                 </Button>
               </div>
             </Container>
             <div className="lg:hidden">
               <div className="flex justify-center mb-4">
-                <a href="www.facebook.com">
-                  <FaFacebookSquare
-                    size={44}
-                    className={`${style.icon} mr-8`}
-                  />
+                <a
+                  className="text-gray-700 hover:text-black mr-6"
+                  href="https://github.com/trust96"
+                >
+                  <FaGithub size={26} />
                 </a>
-                <a href="instagram.com">
-                  <FaInstagramSquare
-                    size={44}
-                    className={`${style.icon} mr-8`}
-                  />
-                </a>
-                <a href="youtube.com">
-                  <FaYoutubeSquare size={44} className={`${style.icon}`} />
+                <a
+                  className="text-gray-700 hover:text-black"
+                  href="linkedin.com/in/trust-oriabure-54ba431b5"
+                >
+                  <FaLinkedin size={26} />
                 </a>
               </div>
-              <ul className=" text-center">
-                {footerItems.map(({ name, path }) => (
-                  <li
-                    className="flex items-center justify-center mb-2"
-                    key={name}
-                  >
-                    <Link href={path}>
-                      <a className={` text-base hover:underline`}>{name}</a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>{" "}
+
               <div className="text-center bg-black text-white flex items-center justify-center">
                 <span>All rights reserved to trust</span>
               </div>

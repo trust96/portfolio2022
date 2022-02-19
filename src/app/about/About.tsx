@@ -7,7 +7,7 @@ type Props = {};
 
 export default function About({}: Props) {
   return (
-    <Section className="bg-purple-200">
+    <Section className="bg-purple-200" id="about">
       <Container>
         <Text tag="p" variant="overline" className="font-bold mb-3 text-center">
           who am i

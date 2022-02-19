@@ -51,7 +51,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @apply py-2 lg:px-4;
+  @apply py-4 lg:px-4;
   @apply text-3xl lg:text-lg;
   outline: none;
 }
@@ -64,6 +64,7 @@
   @apply mb-3 lg:mb-0;
 }
 .container {
+  outline: none;
   display: flex;
   justify-content: space-between;
   align-items: center;

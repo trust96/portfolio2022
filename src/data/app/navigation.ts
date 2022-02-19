@@ -1,37 +1,19 @@
 export const listItems = [
   {
     name: "Home",
-    path: "/#home",
+    path: "/#head",
   },
 
   {
-    name: "chi sono",
-    path: "/#io",
+    name: "About Me",
+    path: "/#about",
   },
   {
-    name: "esperienza",
+    name: "Experience",
     path: "/#exp",
   },
   {
-    name: "progetti",
-    path: "/#progetti",
-  },
-  {
-    name: "Contattami",
-    path: "/#contattami",
-  },
-];
-export const footerItems = [
-  {
-    name: "termini e condizioni",
-    path: "/termini-e-condizioni",
-  },
-  {
-    name: "privacy policy",
-    path: "/privacy-policy",
-  },
-  {
-    name: "cookies policy",
-    path: "/cookies-policy",
+    name: "Skills",
+    path: "/#skills",
   },
 ];

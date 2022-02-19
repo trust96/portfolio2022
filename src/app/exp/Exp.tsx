@@ -8,7 +8,7 @@ import { timeline } from "../../data/app/exp";
 type Props = {};
 export default function Exp({}: Props) {
   return (
-    <Section className="pt-0">
+    <Section className="pt-0" id="exp">
       <Container>
         <Text tag="p" variant="overline" className="font-bold mb-3 text-center">
           what i have been up to

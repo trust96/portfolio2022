@@ -8,21 +8,13 @@ type Props = {
 };
 
 export default function Image({ alt, src, className = "" }: Props) {
-  const [loading, setLoading] = useState(true);
   return (
     <>
-      {loading && (
-        <div className=" d-flex justify-content-center align-items-center">
-          <Spinner />
-        </div>
-      )}
-
       <ImageNext
         src={src}
         layout="responsive"
         alt={alt}
         objectFit="contain"
-        onLoadingComplete={() => setLoading(false)}
         className={className}
       />
     </>
