@@ -1,0 +1,41 @@
+.subtitle {
+  @apply text-lg;
+  @apply text-gray-600;
+}
+.subtitle2 {
+  @apply text-xl;
+  @apply text-gray-600;
+}
+
+.body1 {
+  @apply text-base;
+}
+.body2 {
+  @apply text-sm;
+}
+.overline {
+  @apply text-sm;
+  @apply uppercase;
+}
+.caption {
+  @apply text-sm;
+  @apply italic;
+}
+.color_primary {
+  @apply text-purple-700;
+}
+.color_secondary {
+  @apply text-fuchsia-700;
+}
+.color_success {
+  @apply text-green-700;
+}
+.color_danger {
+  @apply text-red-700;
+}
+.color_warning {
+  @apply text-orange-700;
+}
+.color_info {
+  @apply text-blue-700;
+}
