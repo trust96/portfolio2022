@@ -8,8 +8,7 @@ export default function Footer({}: Props) {
     <footer>
       <div className="py-6 px-4 bg-purple-700 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-300 sm:text-center">
-          © 2022 <a href="https://flowbite.com">Flowbite™</a>. All Rights
-          Reserved.
+          © 2022 <a href="https://flowbite.com">Trust</a>. All Rights Reserved.
         </span>
         <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0">
           <a
