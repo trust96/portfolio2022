@@ -74,7 +74,7 @@ export default function Navigation(): ReactElement {
                 </a>
                 <a
                   className="text-gray-700 hover:text-black"
-                  href="linkedin.com/in/trust-oriabure-54ba431b5"
+                  href="https://linkedin.com/in/trust-oriabure-54ba431b5"
                 >
                   <FaLinkedin size={26} />
                 </a>

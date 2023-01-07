@@ -6,8 +6,7 @@ import Text from "app/text/Text";
 import Title from "app/title/Title";
 import { useRouter } from "next/router";
 import React from "react";
-import Typewriter from "typewriter-effect";
-import me from "../../../public/me.jpeg";
+import me from "../../../public/me.png";
 type Props = {};
 
 const Header = (props: Props) => {
